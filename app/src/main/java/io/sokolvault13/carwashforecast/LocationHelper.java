@@ -57,7 +57,7 @@ public class LocationHelper implements LocationListener {
         if (location != null) {
             onLocationChanged(location);
         }
-        mLocationManager.requestLocationUpdates(mProvider, 2000, 1000f, this, Looper.myLooper());
+        mLocationManager.requestLocationUpdates(mProvider, TEN_MINUTES, 1000f, this, Looper.myLooper());
     }
 
     @Override
