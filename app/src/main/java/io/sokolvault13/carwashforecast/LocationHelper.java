@@ -21,7 +21,7 @@ public class LocationHelper implements LocationListener {
     private LocationManager mLocationManager;
     private String mProvider;
 
-    public LocationHelper(Context context) {
+    private LocationHelper(Context context) {
         mContext = context;
         mLocationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
     }
